@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'django_filters',
+    'rest_framework',
+    
+    
 ]
 
 MIDDLEWARE = [
@@ -82,6 +86,14 @@ DATABASES = {
     }
 }
 
+
+EMAIL_BACKEND = 'django.core.mail.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 578
+EMAIL_HOST_USER = 'from@example.com'
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

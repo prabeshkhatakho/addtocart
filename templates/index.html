@@ -17,7 +17,7 @@
     </div>
 </div>
 
-    <script>window.jQuery || document.write('<script src="{% static 'js/vendor/jquery-1.11.1.min.js' %}"></script>')</script>
+<script>window.jQuery || document.write('<script src="{% static ',js/vendor/jquery-1.11,.1.min.js,' %}"><\/script>')</script>
     <script src="{% static 'js/jquery.vide.min.js' %}"></script>
 
 <!--content-->
@@ -68,7 +68,7 @@
 											<div class="clearfix"></div>
 										</div>
 										<div class="add">
-										   <a herf = "cart/{{product.id}}"><button class="btn btn-danger my-cart-btn my-cart-b " >Add to Cart</button></a>
+											<a href = "cart/{{product.id}}"><button class="btn btn-danger my-cart-btn my-cart-b ">Add to Cart</button></a>
 										</div>
 										
 									</div>
@@ -231,7 +231,7 @@
 												</div>
 												<div class="col-md-7 span-1 ">
 													<h3>{{product.name}}</h3>
-													<p class="in-para"> {{product.descripton}}</p>
+													<p class="in-para"> {{product.description}}</p>
 													<div class="price_single">
 														<div class="mid-2">
 															{% if product.discounted_price > 0 %}
